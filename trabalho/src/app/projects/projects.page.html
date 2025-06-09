@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Meus Projetos
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-list>
+    <ion-item button detail (click)="openDetail('pwa')">
+      <ion-label>
+        <h2>PWA</h2>
+        <p>PWA usando HTML, JS e CSS.</p>
+      </ion-label>
+    </ion-item>
+    <ion-item button detail (click)="openDetail('todo')">
+      <ion-label>
+        <h2>Todo List</h2>
+        <p>App de tarefas usando Ionic.</p>
+      </ion-label>
+    </ion-item>
+    <ion-item button detail (click)="openDetail('personal')">
+      <ion-label>
+        <h2>Personal APP</h2>
+        <p>App de apresentação pessoal com Ionic.</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

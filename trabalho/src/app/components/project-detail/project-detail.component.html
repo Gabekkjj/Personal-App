@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/projects"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Detalhe projeto</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>{{ project?.title }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>{{ project?.description }}</p>
+      <div *ngIf="project?.link">
+        Link do Projeto: <a [href]="project.link" target="_blank">{{ project.link }}</a>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
